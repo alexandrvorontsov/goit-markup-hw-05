@@ -39,7 +39,9 @@
                         <a href="./potrfolio.html" class="link-portfolio-secondary">Портфолио</a>
                     </li>
 
-                    <li class="nav-link"><a href="#" class="link-contact-secondary">Контакты</a></li>
+                    <li class="nav-link">
+                        <a href="#" class="link-contact-secondary">Контакты</a>
+                    </li>
                 </ul>
             </nav>
 
@@ -48,13 +50,13 @@
 
                 <li class="header-mail">
                     <a href="mailto:info@devstudio.com" class="header-contact">
-                        <svg class="icon-envelope" width="16" height="12">
+                        <svg class="icon-envelope-smartphone" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="header-tel">
                     <a href="tel:+380961111111" class="header-contact">
-                        <svg class="icon-smartphone" width="10" height="16">
+                        <svg class="icon-envelope-smartphone" width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -95,26 +97,36 @@
                 <ul class="projects">
                     <!-- project 1 -->
                     <li class="project-link">
-                        <div>
+                        <div class="overlay">
                             <img class="project-image" src="./images/img-portfolio-1.jpg" alt="Ноутбук-веб-страница"
                                 width="370" />
-                            <div class="project-card">
-                                <h2 class="poster-box">Технокряк</h2>
-                                <p class="poster-text">Веб-сайт</p>
-                            </div>
+                            <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов.
+                                Все это позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
                         </div>
+                        <div class="project-card">
+                            <h2 class="poster-box">Технокряк</h2>
+                            <p class="poster-text">Веб-сайт</p>
+                        </div>
+
                     </li>
 
                     <!-- project 2 -->
                     <li class="project-link">
-                        <div>
+                        <div class="project-box">
                             <img class="project-image" src="./images/img-portfolio-2.jpg" alt="Постер-баскетбол"
                                 width="370" />
-                            <div class="project-card">
-                                <h2 class="poster-box">Постер New Orlean vs Golden Star</h2>
-                                <p class="poster-text">Дизайн</p>
-                            </div>
+                            <p class="overlay-text">Ресурс предлагает комплексные предложения с разным уровнем
+                                функционала и сервисов.
+                                Все это позволит посетителю получить
+                                исчерпывающие сведения о компании или частном лице.</p>
                         </div>
+                        <div class="project-card">
+                            <h2 class="poster-box">Постер New Orlean vs Golden Star</h2>
+                            <p class="poster-text">Дизайн</p>
+                        </div>
+
                     </li>
 
                     <!-- project 3 -->
@@ -275,6 +287,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
